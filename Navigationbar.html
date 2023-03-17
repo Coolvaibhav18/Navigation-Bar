@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #navbar {
+        background-color: rgb(26, 32, 63);
+        padding: 7px;
+    }
+
+    #navbar ul {
+        overflow: hidden;
+    }
+     #navbar li {
+        float: left;
+        list-style-type: none;
+        padding: 8px 20px;
+        margin: 5px;
+    }
+    #navbar li:hover {
+        background-color: rgb(64, 70, 102);
+        border-radius: 15px;
+    }
+    #navbar a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+     .search {
+        float: right;
+        padding: 8px 10px;
+    }
+    .search input {
+        border-radius: 15px;
+        border: none;
+        width: 150px;
+        height: 30px;
+        text-align: center;
+    }
+    .search input:hover{
+        font-size: 17px;
+        color:rgb(64, 70, 102) ;
+    }
+    button {
+        float: right;
+        border-radius: 7px;
+        font-size: 18px;
+        margin: 8px;
+        margin-right: 65px;
+        background-color: rgb(26, 32, 63);
+        border: 2px solid white;
+        width: 100px;
+        height: 30px;
+        color: white;
+    }
+
+    button:hover{
+        border: none;
+        background-color: white;
+        color:rgb(64, 70, 102) ;
+    }
+</style>
+
+<body>
+
+    <div id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <button>Search</button>
+            <div class="search">
+                <input type="text" placeholder="Search">
+            </div>
+        </ul>
+
+    </div>
+
+
+</body>
+
+</html>
